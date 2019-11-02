@@ -26,7 +26,7 @@
     </div>
     <div class="row">
       <div class="col s12">
-        <Spells :spells="characterData.spells" />
+        <Spells :spells="characterData.spells" :casting="characterData.casting" />
       </div>
     </div>
     <div class="row">

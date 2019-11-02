@@ -5,42 +5,22 @@
         <i class="material-icons small">bubble_chart</i>
         Spells
       </span>
-      <p><b>Slots</b>: 1st = 4, 2nd = 3</p>
-      <p><b>Max Prepared</b>: 7</p>
-      <p><b>Save DC</b>: 13</p>
-      <p><b>Attack bouns</b>: +5</p>
+      <p><b>Slots</b>: {{ casting.slots }}</p>
+      <p><b>Max Prepared</b>: {{ casting.maxPrepared }}</p>
+      <p><b>Save DC</b>: {{ casting.saveDC }}</p>
+      <p><b>Attack bouns</b>: {{ attackBonus }}</p>
       <hr />
-      <p><b>Known</b>: Cantrips = 4, 1st = 8, 2nd = 4</p><br />
+      <p><b>Known</b>: {{ casting.known }}</p><br />
       <div class="row">
-        <div class="col s4 m2">
-          <p><b>Cantrips</b></p>
+        <div class="col s4 m2" v-for="(spells, index) in spells" :key="index">
+          <p><b>{{ index | spellLevel }}</b></p>
           <ul class="normal-ul push-right">
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Prestidigitation')">Prestidigitation</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Fire Bolt')">Fire Bolt</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Ray of Frost')">Ray of Frost</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Minor Illusion')">Minor Illusion</li>
-          </ul>
-        </div>
-        <div class="col s4 m2">
-          <p><b>1st level</b></p>
-          <ul class="normal-ul push-right">
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Burning Hands')">Burning Hands</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Color Spray')">Color Spray</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Detect Magic')">Detect Magic</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Find Familiar')">Find Familiar</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Fog Cloud')">Fog Cloud</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Shield')">Shield</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Grease')">Grease</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Witch Bolt')">Witch Bolt</li>
-          </ul>
-        </div>
-        <div class="col s4 m2" href="#spellModal">
-          <p><b>2nd level</b></p>
-          <ul class="normal-ul push-right">
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Invisibility')">Invisibility</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Web')">Web</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Scorching Ray')">Scorching Ray</li>
-            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Enlarge/Reduce')">Enlarge/Reduce</li>
+            <li
+              v-for="(spell, index) in spells"
+              :key="index"
+              class="spellLink purple-text text-lighten-3"
+              @click="triggerPopup(spell)"
+            >{{ spell }}</li>
           </ul>
         </div>
       </div>
@@ -92,13 +72,20 @@
 </template>
 
 <script>
-// TODO
-// import caracterData from '@/characterData'
-
 import spellData from '@/spellData.json'
 import { Modal } from 'materialize-css/dist/js/materialize.min.js'
 
 export default {
+  props: {
+    spells: {
+      type: Array,
+      required: true
+    },
+    casting: {
+      type: Object,
+      required: true
+    }
+  },
   data () {
     return {
       selectedSpell: null
@@ -115,6 +102,10 @@ export default {
         duration: 'unknown',
         description: 'unknown'
       }
+    },
+    attackBonus () {
+      const bouns = this.casting.attackBonus
+      return bouns < 0 ? bouns : `+${bouns}`
     }
   },
   mounted () {
@@ -127,6 +118,24 @@ export default {
       const ref = document.querySelector('#spellModal')
       const modal = Modal.getInstance(ref)
       modal.open()
+    }
+  },
+  filters: {
+    spellLevel (level) {
+      if (level === 0) {
+        return 'Cantrips'
+      }
+      return level + [
+        'st',
+        'nd',
+        'rd',
+        'th',
+        'th',
+        'th',
+        'th',
+        'th',
+        'th'
+      ][level] + ' level'
     }
   }
 }
