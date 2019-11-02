@@ -1,6 +1,5 @@
 <template>
   <div id="character_sheet">
-    <h3>Character Sheet</h3>
     <div class="row">
       <div class="col s12 m6">
         <div class="card blue-grey darken-1">
@@ -241,7 +240,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col s12">
+      <div class="col s12 m6">
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">
@@ -262,9 +261,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col s12">
+      <div class="col s12 m6">
         <div class="card blue-grey darken-1">
           <div class="card-content white-text">
             <span class="card-title">
@@ -306,7 +303,7 @@
             <p><b>Known</b>: Cantrips = 4, 1st = 8, 2nd = 4</p><br />
             <p><b>1st level</b></p>
             <div class="row">
-              <div class="col s6 m4">
+              <div class="col s4 m2">
                 <ul class="normal-ul push-right">
                   <li>Burning Hands</li>
                   <li>Color Spray</li>
@@ -318,7 +315,7 @@
                   <li>Witch Bolt</li>
                 </ul>
               </div>
-              <div class="col s6 m4">
+              <div class="col s4 m2">
                 <p><b>2nd level</b></p>
                 <ul class="normal-ul push-right">
                   <li>Invisibility</li>
@@ -326,10 +323,6 @@
                   <li>Scorching Ray</li>
                   <li>Enlarge/Reduce</li>
                 </ul>
-              </div>
-              <div class="col s6 m4">
-                <p><b>3rd level</b></p>
-                <ul class="normal-ul push-right"></ul>
               </div>
             </div>
           </div>
@@ -365,8 +358,8 @@
 </template>
 
 <style>
-ul.normal-ul li {
-  list-style-type: circle;
+.normal-ul li {
+  list-style-type: circle !important;
 }
 
 .push-right {

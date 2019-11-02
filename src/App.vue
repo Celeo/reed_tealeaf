@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-large pad-top">
     <Sheet />
   </div>
 </template>
@@ -13,3 +13,15 @@ export default {
   }
 }
 </script>
+
+<style>
+.container-large {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pad-top {
+  padding-top: 2rem;
+}
+</style>
