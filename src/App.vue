@@ -1,15 +1,15 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="container">
+    <Sheet />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Sheet from '@/components/Sheet'
 
 export default {
   components: {
-    HelloWorld
+    Sheet
   }
 }
 </script>
