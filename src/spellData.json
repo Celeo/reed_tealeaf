@@ -1,0 +1,110 @@
+{
+  "Burning Hands": {
+    "level": "1",
+    "school": "Evocation",
+    "time": "1 action",
+    "range": "Self (15ft cone)",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": "Each creature in the area takes 3D6 damage on failed Dexterity save or 1/2 on success. Any flammable objects in the area that aren't carried or worn are lit. The damage increases by 1D6 for each spell slot above 1."
+  },
+  "Color Spray": {
+    "level": "1",
+    "school": "Illusion",
+    "time": "1 action",
+    "range": "Self (15 cone)",
+    "components": "V, S, M",
+    "duration": "1 round",
+    "description": "Roll 6d10: that amount of HP of creatures in the area are affected in ascending order of current HP. Affected creatures are blinded for the duration. If the remaining HP is not enough to equal a next creature's current HP, that creature and others are not effected."
+  },
+  "Detect Magic": {
+    "level": "1",
+    "school": "Divination",
+    "time": "1 action or ritual",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration to 10min",
+    "description": "For the duration, you can sense magic within 30ft. You can use an action to see a faint aura around a visible target in the area that bears magic and know the school. The vision is blocked by 1ft of stone, 1in of metal, a sheet of lead, or 3ft of wood/dirt but otherwise penetrates."
+  },
+  "Find Familiar": {
+    "level": "1",
+    "school": "Conjuration",
+    "time": "1hr",
+    "range": "10ft",
+    "components": "V, S, M (10 gold of supplies)",
+    "duration": "Instantaneous",
+    "description": "Gain a familiar in the form of bat/cat/crab/frog/tad/hawk/lizard/octopus/owl/snake/fish/rat/raven/sea horse/spider/weasel. The animal is your choice of celestial/fey/fiend. The familiar acts on its own but obeys commands including in combat (though it cannot attack). When within 100ft, you and it can communicate telepathically. Spending an action allows you to use the familiar's eyes/ears for a round, during which you are deaf and blind in your own body. Can spend an action to temporarily or permanently dismiss. Can't have more than 1 familiar at a time. Can cast a spell with range 'touch' through the familiar when it's within 100ft and uses its reaction."
+  },
+  "Fog Cloud": {
+    "level": "1",
+    "school": "Conjuration",
+    "time": "1 action",
+    "range": "120ft",
+    "components": "V, S",
+    "duration": "Concentration to 1hr",
+    "description": "Create a 20ft radius sphere of fog at a point, which spreads around corners, making the entire heavily obscured. Can be removed by a wind of 10+ mph. The radius increases by 20ft for each spell slot above 1."
+  },
+  "Shield": {
+    "level": "1",
+    "school": "Abjuration",
+    "time": "1 reaction when being attacked",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "1 round",
+    "description": "Until the start of your next turn, you have +5 AC including against the currently incoming attack and take no damage from 'Magic Missile'."
+  },
+  "Grease": {
+    "level": "1",
+    "school": "Conjuration",
+    "time": "1 action",
+    "range": "60ft",
+    "components": "V, S, M",
+    "duration": "1min",
+    "description": "Cover a 10ft square in grease, turning it into difficult terrain. Any creature that is in the area when cast, moves into the area, or ends its turn in the area must make a Dexterity save or fall prone."
+  },
+  "Witch Bolt": {
+    "level": "1",
+    "school": "Evocation",
+    "time": "1 action",
+    "range": "30ft",
+    "components": "V, S, M",
+    "duration": "Concentration to 1min",
+    "description": "Ranged spell attack. If successful, lightning connects you to the target, dealing 1d12 lightning damage on creation and 1d12 lightning damage on every subsequent turn where you use your action to trigger the effect again, though the spell ends if not sustained in this manner. The damage increases by 1d12 for each spell slot above 1."
+  },
+  "Invisibility": {
+    "level": "2",
+    "school": "Illusion",
+    "time": "1 action",
+    "range": "Touch",
+    "components": "V, S, M",
+    "duration": "Concentration to 1hr",
+    "description": "The target and anything they're carrying/wearing is made invisible. Ends if they attack or cast. Number of affected targets increases by 1 for each spell slot above 2."
+  },
+  "Web": {
+    "level": "2",
+    "school": "Conjuration",
+    "time": "1 action",
+    "range": "60ft",
+    "components": "V, S, M",
+    "duration": "Concentration to 1hr",
+    "description": "Fill a 20ft cube with webs, making the area difficult terrain and lightly obscured. The webs must be connected to something on at least 2 sides, though they can be layed on the floor/wall/ceiling. Any creature that moves into or starts its turn in the webs must make a Dexterity save or be restrained, which requires a Strength check against the spell DC to break free. The web is flammable, being destroyed 5ft/round when exposed to fire, dealing 2d4 fire damage to any creature that starts its turn in the fire."
+  },
+  "Scorching Ray": {
+    "level": "2",
+    "school": "Evocation",
+    "time": "1 action",
+    "range": "120ft",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": "Create 3 rays of fire and send them at targets, choosing between 1 and the number of rays for the number of targets. Each ray requires a ranged spell attack, dealing 2d6 fire damage on a hit. Create an additonal ray for each spell slot above 2."
+  },
+  "Enlarge/Reduce": {
+    "level": "2",
+    "school": "Transmutation",
+    "time": "1 action",
+    "range": "30ft",
+    "components": "V, S, M",
+    "duration": "Concentration to 1min",
+    "description": "The target is enlarged or reduce unless they succeed at a Constitution save. A creature is transformed along with everything they're carrying/wearing, though those items return to normal size immediately after being dropped. ENLARGED targets have size multiplied by 2, weight multiplied by 1, and size category increased by 1. Any environmental limitation to reaching this full size caps the target at the largest available for the space its in. An enlarged creature has advantage on Strength checks and saves and their weapons deal +1d4 extra damage. REDUCED targets have their size divided by 2, weight divided by 8, and size category reduced by 1. A reduced creature has disadvantage on Strength checks and saves and their weapons deal -1d4 damage (but cannot be less than 1)."
+  }
+}
