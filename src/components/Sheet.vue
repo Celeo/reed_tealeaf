@@ -2,36 +2,36 @@
   <div id="character_sheet">
     <div class="row">
       <div class="col s12 m6">
-        <Overview />
+        <Overview :overview="characterData.overview" />
       </div>
       <div class="col s12 m6">
-        <Background />
+        <Background :background="characterData.background" :languages="characterData.languages" />
       </div>
     </div>
     <div class="row">
       <div class="col s12 m6">
-        <Attributes />
+        <Attributes :attributes="characterData.attributes" :saves="characterData.saves" />
       </div>
       <div class="col s12 m6">
-        <Skills />
+        <Skills :skills="characterData.skills" />
       </div>
     </div>
     <div class="row">
       <div class="col s12 m6">
-        <Equipment />
+        <Equipment :equipment="characterData.equipment" />
       </div>
       <div class="col s12 m6">
-        <Abilities />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12">
-        <Spells />
+        <Abilities :abilities="characterData.abilities" />
       </div>
     </div>
     <div class="row">
       <div class="col s12">
-        <LifeEvents />
+        <Spells :spells="characterData.spells" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <LifeEvents :lifeEvents="characterData.lifeEvents" />
       </div>
     </div>
   </div>
@@ -57,16 +57,12 @@ export default {
     Abilities,
     Spells,
     LifeEvents
+  },
+  props: {
+    characterData: {
+      type: Object,
+      required: true
+    }
   }
 }
 </script>
-
-<style>
-.normal-ul li {
-  list-style-type: circle !important;
-}
-
-.push-right {
-  margin-left: 1.5rem;
-}
-</style>

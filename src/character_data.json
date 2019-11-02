@@ -1,0 +1,84 @@
+{
+  "overview": {
+    "name": "Reed Tealeaf",
+    "race": "Halfling",
+    "class": "Wizard",
+    "level": 4,
+    "maxHealth": 32,
+    "hitDie": "d6"
+  },
+  "attributes": {
+    "strength": 10,
+    "dexterity": 16,
+    "constitution": 16,
+    "intelligence": 15,
+    "wisdom": 8,
+    "charisma": 11
+  },
+  "saves": [
+    "intelligence",
+    "wisdom"
+  ],
+  "skills": [
+    "arcana",
+    "history",
+    "insight",
+    "investigation"
+  ],
+  "equipment": {
+    "gold": 120,
+    "items": [
+      "Quarterstaff",
+      "Arcane focus",
+      "Explorer's pack: backpack, bedroll, mess kit, tinderbox, torch (10), rations (10), waterskin, hempen rope",
+      "Spellbook",
+      "Ink & quill",
+      "Knife",
+      "Letter",
+      "Common clothes"
+    ]
+  },
+  "abilities": {
+    "race": [
+      "Can reroll on rolling a 1 on a d20; must take the second roll",
+      "Have advantage to rolls to save against fear effects",
+      "Can freely move throw the square of a creature that’s medium or larger",
+      "Can hide behind a creature that’s medium or larger"
+    ],
+    "class": [
+      "Spellcasting",
+      "Arcane Recovery - 1/day after short rest, regain level/2 of spent spell slots",
+      "Arcane Tradition - School of Conjuration",
+      "Conjuration Savant - Gold &amp; time to copy Conjuration spells is halved",
+      "Minor Conjuration - Can create small inanimate objects"
+    ]
+  },
+  "background": {
+    "choice": "Sage",
+    "quotes": [
+      "I love a great mystery.",
+      "The path to power is the path of knowledge.",
+      "I owe a great debt that I need to pay back.",
+      "I speak without thinking about my words."
+    ]
+  },
+  "languages": [
+    "Common",
+    "Halfling",
+    "Dwarvish",
+    "TBD"
+  ],
+  "lifeEvents": [
+    "Didn't know my parents personally, but was told of them",
+    "Born at a healer's home",
+    "2 older siblings, both older, one is an artisan and the other a trapper",
+    "Raised by grandparents - mother died in childbirth and father left afterward",
+    "Poor lifestlye and family life",
+    "Had fun &amp; spent most of the time at friends' homes",
+    "Impressed a wizard who brought me to the school of magic",
+    "Was selected from a group of potential students to be trained",
+    "Made a friend with an adventurer (PC tie in)",
+    "Met a powerful being (potential campaign tie in)",
+    "Was wrongly accused of the theft of a tome of knowledge and was sent to the service of the crown (campaign tie in)"
+  ]
+}

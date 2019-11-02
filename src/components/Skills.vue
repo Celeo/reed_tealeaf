@@ -14,98 +14,36 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Acrobatics</td>
-            <td>Dexterity</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Animal Handling</td>
-            <td>Wisdom</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Arcana</td>
-            <td>Intelligence</td>
-            <td>X</td>
-          </tr>
-          <tr>
-            <td>Athletics</td>
-            <td>Strength</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Deception</td>
-            <td>Charisma</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>History</td>
-            <td>Intelligence</td>
-            <td>X</td>
-          </tr>
-          <tr>
-            <td>Insight</td>
-            <td>Wisdom</td>
-            <td>X</td>
-          </tr>
-          <tr>
-            <td>Intimidation</td>
-            <td>Charisma</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Investigation</td>
-            <td>Intelligence</td>
-            <td>X</td>
-          </tr>
-          <tr>
-            <td>Medicine</td>
-            <td>Wisdom</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Nature</td>
-            <td>Intelligence</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Perception</td>
-            <td>Wisdom</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Performance</td>
-            <td>Charisma</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Persuasion</td>
-            <td>Charisma</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Religion</td>
-            <td>Intelligence</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Sleight of Hand</td>
-            <td>Dexterity</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Stealth</td>
-            <td>Dexterity</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Survival</td>
-            <td>Wisdom</td>
-            <td></td>
+          <tr v-for="(skill, index) in allSkills" :key="index">
+            <td>{{ skill.name }}</td>
+            <td>{{ skill.attribute }}</td>
+            <td>{{ hasSkill(skill.name) }}</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 </template>
+
+<script>
+import { allSkills } from '@/system'
+
+export default {
+  props: {
+    skills: {
+      type: Array,
+      required: true
+    }
+  },
+  data () {
+    return {
+      allSkills
+    }
+  },
+  methods: {
+    hasSkill (name) {
+      return this.skills.indexOf(name.toLowerCase()) !== -1 ? 'X' : ''
+    }
+  }
+}
+</script>

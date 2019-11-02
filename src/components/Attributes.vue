@@ -17,42 +17,70 @@
         <tbody>
           <tr>
             <td>Strength</td>
-            <td>10</td>
-            <td>+0</td>
-            <td></td>
+            <td>{{ attributes.strength }}</td>
+            <td>{{ attributes.strength | mod }}</td>
+            <td>{{ hasSave('strength') }}</td>
           </tr>
           <tr>
             <td>Dexterity</td>
-            <td>16</td>
-            <td>+3</td>
-            <td></td>
+            <td>{{ attributes.dexterity }}</td>
+            <td>{{ attributes.dexterity | mod }}</td>
+            <td>{{ hasSave('dexterity') }}</td>
           </tr>
           <tr>
             <td>Constitution</td>
-            <td>15</td>
-            <td>+2</td>
-            <td></td>
+            <td>{{ attributes.constitution }}</td>
+            <td>{{ attributes.constitution | mod }}</td>
+            <td>{{ hasSave('constitution') }}</td>
           </tr>
           <tr>
             <td>Intelligence</td>
-            <td>16</td>
-            <td>+3</td>
-            <td>X</td>
+            <td>{{ attributes.intelligence }}</td>
+            <td>{{ attributes.intelligence | mod }}</td>
+            <td>{{ hasSave('intelligence') }}</td>
           </tr>
           <tr>
             <td>Wisdom</td>
-            <td>8</td>
-            <td>-1</td>
-            <td>X</td>
+            <td>{{ attributes.wisdom }}</td>
+            <td>{{ attributes.wisdom | mod }}</td>
+            <td>{{ hasSave('wisdom') }}</td>
           </tr>
           <tr>
             <td>Charisma</td>
-            <td>11</td>
-            <td>+0</td>
-            <td></td>
+            <td>{{ attributes.charisma }}</td>
+            <td>{{ attributes.charisma | mod }}</td>
+            <td>{{ hasSave('charisma') }}</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 </template>
+
+<script>
+import { attributeModifier } from '@/system'
+
+export default {
+  props: {
+    attributes: {
+      type: Object,
+      required: true
+    },
+    saves: {
+      type: Array,
+      required: true
+    }
+  },
+  methods: {
+    hasSave (name) {
+      return this.saves.indexOf(name) !== -1 ? 'X' : ''
+    }
+  },
+  filters: {
+    mod (value) {
+      const mod = attributeModifier(value)
+      return mod < 0 ? mod : `+${mod}`
+    }
+  }
+}
+</script>

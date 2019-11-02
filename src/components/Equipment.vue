@@ -5,17 +5,21 @@
         <i class="material-icons small">business_center</i>
         Equipment
       </span>
-      <p><b>Gold</b>: 120</p>
+      <p><b>Gold</b>: {{ equipment.gold }}</p>
       <ul class="normal-ul push-right">
-        <li>Quarterstaff</li>
-        <li>Arcane focus</li>
-        <li>Explorer's pack: backpack, bedroll, mess kit, tinderbox, torch (10), rations (10), waterskin, hempen rope</li>
-        <li>Spellbook</li>
-        <li>Ink &amp; quill</li>
-        <li>Knife</li>
-        <li>Letter</li>
-        <li>Common clothes</li>
+        <li v-for="(item, index) in equipment.items" :key="index">{{ item }}</li>
       </ul>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    equipment: {
+      type: Object,
+      required: true
+    }
+  }
+}
+</script>

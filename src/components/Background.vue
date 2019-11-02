@@ -5,20 +5,28 @@
         <i class="material-icons small">art_track</i>
         Background
       </span>
-      <p><b>Sage</b></p><br />
-      <p>
-        "I love a great mystery."<br />
-        "The path to power is the path of knowledge."<br />
-        "I owe a great debt that I need to pay back."<br />
-        "I speak without thinking about my words."
-      </p><br />
+      <p><b>{{ background.choice }}</b></p><br />
+      <p v-for="(quote, index) in background.quotes" :key="index">"{{ quote }}"</p>
+      <br />
       <p><b>Languages</b></p>
       <ul class="normal-ul push-right">
-        <li>Common</li>
-        <li>Halfling</li>
-        <li>Dwarvish</li>
-        <li>TBD</li>
+        <li v-for="(language, index) in languages" :key="index">{{ language }}</li>
       </ul>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    background: {
+      type: Object,
+      required: true
+    },
+    languages: {
+      type: Array,
+      required: true
+    }
+  }
+}
+</script>

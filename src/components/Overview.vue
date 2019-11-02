@@ -9,34 +9,53 @@
         <tbody>
           <tr>
             <th>Name</th>
-            <td>Reed Tealeaf</td>
+            <td>{{ overview.name }}</td>
           </tr>
           <tr>
             <th>Race</th>
-            <td>Halfling</td>
+            <td>{{ overview.race }}</td>
           </tr>
           <tr>
             <th>Class</th>
-            <td>Wizard</td>
+            <td>{{ overview.class }}</td>
           </tr>
           <tr>
             <th>Level</th>
-            <td>4</td>
+            <td>{{ overview.level }}</td>
           </tr>
           <tr>
             <th>Prof. Bonus</th>
-            <td>+2</td>
+            <td>{{ proficiencyBonus() }}</td>
           </tr>
           <tr>
             <th>Max Health</th>
-            <td>32</td>
+            <td>{{ overview.maxHealth }}</td>
           </tr>
           <tr>
             <th>Hit Die</th>
-            <td>d6</td>
+            <td>{{ overview.hitDie }}</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 </template>
+
+<script>
+import { proficiencyBonus } from '@/system'
+
+export default {
+  props: {
+    overview: {
+      type: Object,
+      required: true
+    }
+  },
+  methods: {
+    proficiencyBonus () {
+      const bonus = proficiencyBonus(this.overview.level)
+      return `+${bonus}`
+    }
+  }
+}
+</script>
