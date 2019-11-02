@@ -6,7 +6,7 @@
 
 <script>
 import Sheet from '@/components/Sheet'
-import characterData from '@/character_data.json'
+import characterData from '@/characterData.json'
 
 export default {
   components: {

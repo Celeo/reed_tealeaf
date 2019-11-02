@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { proficiencyBonus } from '@/system'
+import { proficiencyBonus } from '@/systemRules'
 
 export default {
   props: {

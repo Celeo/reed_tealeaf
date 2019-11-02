@@ -25,7 +25,7 @@ export const allSkills = [
   },
   {
     name: 'Insight',
-    attribute: 'wisdom'
+    attribute: 'Wisdom'
   },
   {
     name: 'Intimidation',

@@ -17,39 +17,39 @@
         <tbody>
           <tr>
             <td>Strength</td>
-            <td>{{ attributes.strength }}</td>
-            <td>{{ attributes.strength | mod }}</td>
-            <td>{{ hasSave('strength') }}</td>
+            <td>{{ attributes.Strength }}</td>
+            <td>{{ attributes.Strength | mod }}</td>
+            <td>{{ hasSave('Strength') }}</td>
           </tr>
           <tr>
             <td>Dexterity</td>
-            <td>{{ attributes.dexterity }}</td>
-            <td>{{ attributes.dexterity | mod }}</td>
-            <td>{{ hasSave('dexterity') }}</td>
+            <td>{{ attributes.Dexterity }}</td>
+            <td>{{ attributes.Dexterity | mod }}</td>
+            <td>{{ hasSave('Dexterity') }}</td>
           </tr>
           <tr>
             <td>Constitution</td>
-            <td>{{ attributes.constitution }}</td>
-            <td>{{ attributes.constitution | mod }}</td>
-            <td>{{ hasSave('constitution') }}</td>
+            <td>{{ attributes.Constitution }}</td>
+            <td>{{ attributes.Constitution | mod }}</td>
+            <td>{{ hasSave('Constitution') }}</td>
           </tr>
           <tr>
             <td>Intelligence</td>
-            <td>{{ attributes.intelligence }}</td>
-            <td>{{ attributes.intelligence | mod }}</td>
-            <td>{{ hasSave('intelligence') }}</td>
+            <td>{{ attributes.Intelligence }}</td>
+            <td>{{ attributes.Intelligence | mod }}</td>
+            <td>{{ hasSave('Intelligence') }}</td>
           </tr>
           <tr>
             <td>Wisdom</td>
-            <td>{{ attributes.wisdom }}</td>
-            <td>{{ attributes.wisdom | mod }}</td>
-            <td>{{ hasSave('wisdom') }}</td>
+            <td>{{ attributes.Wisdom }}</td>
+            <td>{{ attributes.Wisdom | mod }}</td>
+            <td>{{ hasSave('Wisdom') }}</td>
           </tr>
           <tr>
             <td>Charisma</td>
-            <td>{{ attributes.charisma }}</td>
-            <td>{{ attributes.charisma | mod }}</td>
-            <td>{{ hasSave('charisma') }}</td>
+            <td>{{ attributes.Charisma }}</td>
+            <td>{{ attributes.Charisma | mod }}</td>
+            <td>{{ hasSave('Charisma') }}</td>
           </tr>
         </tbody>
       </table>
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import { attributeModifier } from '@/system'
+import { attributeModifier } from '@/systemRules'
 
 export default {
   props: {

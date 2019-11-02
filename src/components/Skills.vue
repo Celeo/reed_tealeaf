@@ -3,21 +3,19 @@
     <div class="card-content white-text">
       <span class="card-title orange-text">
         <i class="material-icons small">build</i>
-        Skills
+        Proficient Skills
       </span>
       <table class="table">
         <thead>
           <tr>
             <th>Name</th>
             <th>Attribute</th>
-            <th>Proficiency</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(skill, index) in allSkills" :key="index">
-            <td>{{ skill.name }}</td>
-            <td>{{ skill.attribute }}</td>
-            <td>{{ hasSkill(skill.name) }}</td>
+          <tr v-for="(skill, index) in skills" :key="index">
+            <td>{{ skill }}</td>
+            <td>{{ linkedAttribute(skill) }}</td>
           </tr>
         </tbody>
       </table>
@@ -26,7 +24,7 @@
 </template>
 
 <script>
-import { allSkills } from '@/system'
+import { allSkills } from '@/systemRules'
 
 export default {
   props: {
@@ -41,8 +39,9 @@ export default {
     }
   },
   methods: {
-    hasSkill (name) {
-      return this.skills.indexOf(name.toLowerCase()) !== -1 ? 'X' : ''
+    linkedAttribute (name) {
+      const matching = allSkills.find(s => s.name === name)
+      return matching ? matching.attribute : 'unknown'
     }
   }
 }

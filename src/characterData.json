@@ -8,22 +8,22 @@
     "hitDie": "d6"
   },
   "attributes": {
-    "strength": 10,
-    "dexterity": 16,
-    "constitution": 16,
-    "intelligence": 15,
-    "wisdom": 8,
-    "charisma": 11
+    "Strength": 10,
+    "Dexterity": 16,
+    "Constitution": 16,
+    "Intelligence": 15,
+    "Wisdom": 8,
+    "Charisma": 11
   },
   "saves": [
-    "intelligence",
-    "wisdom"
+    "Intelligence",
+    "Wisdom"
   ],
   "skills": [
-    "arcana",
-    "history",
-    "insight",
-    "investigation"
+    "Arcana",
+    "History",
+    "Insight",
+    "Investigation"
   ],
   "equipment": {
     "gold": 120,
