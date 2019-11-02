@@ -1,7 +1,7 @@
 <template>
   <div class="card blue-grey darken-1">
     <div class="card-content white-text">
-      <span class="card-title">
+      <span class="card-title orange-text">
         <i class="material-icons small">bubble_chart</i>
         Spells
       </span>
