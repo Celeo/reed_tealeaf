@@ -11,9 +11,18 @@
       <p><b>Attack bouns</b>: +5</p>
       <hr />
       <p><b>Known</b>: Cantrips = 4, 1st = 8, 2nd = 4</p><br />
-      <p><b>1st level</b></p>
       <div class="row">
         <div class="col s4 m2">
+          <p><b>Cantrips</b></p>
+          <ul class="normal-ul push-right">
+            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Prestidigitation')">Prestidigitation</li>
+            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Fire Bolt')">Fire Bolt</li>
+            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Ray of Frost')">Ray of Frost</li>
+            <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Minor Illusion')">Minor Illusion</li>
+          </ul>
+        </div>
+        <div class="col s4 m2">
+          <p><b>1st level</b></p>
           <ul class="normal-ul push-right">
             <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Burning Hands')">Burning Hands</li>
             <li class="spellLink purple-text text-lighten-3" @click="triggerPopup('Color Spray')">Color Spray</li>

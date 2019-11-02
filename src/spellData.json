@@ -1,4 +1,40 @@
 {
+  "Prestidigitation": {
+    "level": "Cantrip",
+    "school": "Transmutation",
+    "time": "1 action",
+    "range": "10ft",
+    "components": "V, S",
+    "duration": "1hr",
+    "description": "Create small magical effects."
+  },
+  "Fire Bolt": {
+    "level": "Cantrip",
+    "school": "Evocation",
+    "time": "1 action",
+    "range": "120ft",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": "Make a ranged spell attack. On a hit, the target takes 1d10 fire damage. Flammable objects not worn/carried are lit. The damage increases by 1d10 at each of level 5, 11, and 17."
+  },
+  "Ray of Frost": {
+    "level": "Cantrip",
+    "school": " Evocation",
+    "time": "1 action",
+    "range": "60ft",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": "Make a ranged spell attack. On a hit, the target takes 1d8 cold damage and has its speed reduced by 10 until the start of your next turn. The damage increases by 1d8 at each of level 5, 11, and 17."
+  },
+  "Minor Illusion": {
+    "level": "Cantrip",
+    "school": "Illusion",
+    "time": "1 action",
+    "range": "30ft",
+    "components": "S, M",
+    "duration": "1min",
+    "description": "Create a small sound or image. Is dispelled if the spell is cast again or manually dismissed as an action. Sounds can range in loudness from a whisper to scream. Images must be smaller than 5ft cubes and has no mass. Disbelieving the illusion can be done through a successful Investigation check against the caster's spell save DC, upon which the illusion becomes faint to that creature. Physical interaction with an image immediately causes disbelief."
+  },
   "Burning Hands": {
     "level": "1",
     "school": "Evocation",
