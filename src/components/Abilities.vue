@@ -13,6 +13,10 @@
       <ul class="normal-ul push-right">
         <li v-for="(ability, index) in abilities.class" :key="index">{{ ability }}</li>
       </ul>
+      <p><b>Feats</b></p>
+      <ul class="normal-ul push-right">
+        <li v-for="(ability, index) in abilities.feats" :key="index">{{ ability }}</li>
+      </ul>
     </div>
   </div>
 </template>

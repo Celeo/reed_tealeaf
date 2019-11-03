@@ -9,9 +9,9 @@
   },
   "attributes": {
     "Strength": 10,
-    "Dexterity": 16,
-    "Constitution": 16,
-    "Intelligence": 15,
+    "Dexterity": 15,
+    "Constitution": 15,
+    "Intelligence": 16,
     "Wisdom": 8,
     "Charisma": 11
   },
@@ -51,6 +51,9 @@
       "Arcane Tradition - School of Conjuration",
       "Conjuration Savant - Gold &amp; time to copy Conjuration spells is halved",
       "Minor Conjuration - Can create small inanimate objects"
+    ],
+    "feats": [
+      "Keen Mind - always know which ways is north, always known how many hours until sunset/sunrise, and can accurately recall anything you've seen/heard within the last month"
     ]
   },
   "background": {
