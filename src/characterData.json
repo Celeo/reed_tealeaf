@@ -85,25 +85,25 @@
   "spells": [
     [
       "Prestidigitation",
-      "Fire Bolt",
-      "Ray of Frost",
-      "Minor Illusion"
+      "Create Bonfire",
+      "Mending",
+      "Mold Earth"
     ],
     [
-      "Burning Hands",
-      "Color Spray",
-      "Detect Magic",
       "Find Familiar",
       "Fog Cloud",
-      "Shield",
       "Grease",
-      "Witch Bolt"
+      "Catapult",
+      "Ice Knife",
+      "Unseen Servant",
+      "Feather Fall",
+      "Floating Disk"
     ],
     [
-      "Invisibility",
+      "Pyrotechnics",
       "Web",
-      "Scorching Ray",
-      "Enlarge/Reduce"
+      "Dust Devil",
+      "Earthen Grasp"
     ]
   ],
   "casting": {

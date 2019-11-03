@@ -65,7 +65,7 @@
   "Find Familiar": {
     "level": "1",
     "school": "Conjuration",
-    "time": "1hr",
+    "time": "1hr ritual",
     "range": "10ft",
     "components": "V, S, M (10 gold of supplies)",
     "duration": "Instantaneous",
@@ -142,5 +142,113 @@
     "components": "V, S, M",
     "duration": "Concentration to 1min",
     "description": "The target is enlarged or reduce unless they succeed at a Constitution save. A creature is transformed along with everything they're carrying/wearing, though those items return to normal size immediately after being dropped. ENLARGED targets have size multiplied by 2, weight multiplied by 1, and size category increased by 1. Any environmental limitation to reaching this full size caps the target at the largest available for the space its in. An enlarged creature has advantage on Strength checks and saves and their weapons deal +1d4 extra damage. REDUCED targets have their size divided by 2, weight divided by 8, and size category reduced by 1. A reduced creature has disadvantage on Strength checks and saves and their weapons deal -1d4 damage (but cannot be less than 1)."
+  },
+  "Create Bonfire": {
+    "level": "Cantrip",
+    "school": "Conjuration",
+    "time": "1 action",
+    "range": "60ft",
+    "components": "V, S",
+    "duration": "Concentration to 1min",
+    "description": "Create a 5ft-cube bonfire on the ground. Any creature in that space upon casting must make a Dexterity save or take 1d8 fire damage; this also applies to creatures moving into the space or ending their turn in that space. Ignites flammable objects that aren't carried/worn. The damage increases by 1d8 at each of levels 5, 11, and 17."
+  },
+  "Mending": {
+    "level": "Cantrip",
+    "school": "Transmutation",
+    "time": "1min",
+    "range": "Touch",
+    "components": "V, S, M",
+    "duration": "Instantaneous",
+    "description": "Repairs a single break/tear in an object of up to 1ft in all dimensions."
+  },
+  "Mold Earth": {
+    "level": "Cantrip",
+    "school": "Transmutation",
+    "time": "1 action",
+    "range": "30ft",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": "Choose a 5ft cube of earth. You can excavate loose earth and move it up to 5ft away. You can change the shape and/or color of the earth, which lasts for 1hr. You can change it to or from difficult terrain, which lasts for 1hr. Can only have 2 non-instantaneous effects active. Any change can be dismissed with an action."
+  },
+  "Catapult": {
+    "level": "1",
+    "school": "Transmutation",
+    "time": "1 action",
+    "range": "60ft",
+    "components": "S",
+    "duration": "Instantaneous",
+    "description": "Choose an object of under 5lbs that isn't worn/carried. That object flies in a straight line up to 90ft away in a selected direction. If it strikes a creature, the creature must make a Dexterity save or take 3d8 bludgeoning damage, and the flying object stops. The damage increases by 1d8 and max weight by 5lbs for each spell slot above 1."
+  },
+  "Ice Knife": {
+    "level": "1",
+    "school": "Conjuration",
+    "time": "1 action",
+    "range": "60ft",
+    "components": "S, M",
+    "duration": "Instantaneous",
+    "description": "Fling a shard of ice by making a ranged spell attack against a target. On hit, the target takes 1d10 piercing damage. When the shard reaches its target, it explodes, causing every creature within 5ft to make a Dexterity save or take 2d6 cold damage. The cold damage increases by 1d6 for each spell slot above 1."
+  },
+  "Unseen Servant": {
+    "level": "1",
+    "school": "Conjuration",
+    "time": "1 action or ritual",
+    "range": "60ft",
+    "components": "V, S, M",
+    "duration": "1hr",
+    "description": "Create a invisible/mindless/shapeless force that follows commands. AC = 10, HP = 1, Strength = 2. It cannot attack. As a bonus action, you can mentally command it to move up to 15ft and interact with an object. If it moves more than 60ft away from you, the spell ends."
+  },
+  "Feather Fall": {
+    "level": "1",
+    "school": "Transmutation",
+    "time": "1 reaction",
+    "range": "60ft",
+    "components": "V, M",
+    "duration": "1min",
+    "description": "Choose up to 5 falling creatures. Their fall speed becomes at max 60ft/round. If the creature lands before the spell expires, they take no damage and the effect on them ends."
+  },
+  "Longstrider": {
+    "level": "1",
+    "school": "Transmutation",
+    "time": "1 action",
+    "range": "Touch",
+    "components": "V, S, M",
+    "duration": "1hr",
+    "description": "The creature's speed increases by 10ft."
+  },
+  "Pyrotechnics": {
+    "level": "2",
+    "school": "Transmutation",
+    "time": "1 action",
+    "range": "60ft",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "description": "Choose a 5ft cube of nonmagical flame. You can extinguish it, creating either fireworks or smoke. FIREWORKS causes the fire to explore with many colors, causing creatures within 10ft of the fire to make a Constitution save or be blinded until the end of your next turn. SMOKE causes a 20ft radius of heavily obscured air, which lasts for 1min unless a strong wind clears it."
+  },
+  "Dust Devil": {
+    "level": "2",
+    "school": "Conjuration",
+    "time": "1 action",
+    "range": "60ft",
+    "components": "V, S, M",
+    "duration": "1min",
+    "description": "Create a dust devil in a 5ft unoccupied cube. Any creature that ends its turn with 5ft of the dust devil must make a Strength save or take 1d8 bludgeoning damage and be pushed 10ft away (1/2 damage and no push on successful save). As a bonus action, you can move the dust devil up to 30ft in any direction. If it moves over sand/dust/dirt/gravel, it sucks it up and makes a 10ft radius heavily obscured cloud around itself lasting until the end of your next turn."
+  },
+  "Earthen Grasp": {
+    "level": "2",
+    "school": "Transmutation",
+    "time": "1 action",
+    "range": "30ft",
+    "components": "V, S, M",
+    "duration": "1min",
+    "description": "Choose a 5ft square of unoccupied space on the ground. A medium-sized hand from the soil is created and reaches for 1 creature you can see within 5ft, causing that creature to make a Strength save or take 2d6 bludgeoning damage and be restrained. As an action, you can cause the hand to crush a restrained target, causing 2d6 bludgeoning damage on a failed Strength save or 1/2 on a success. As an action, you can cause the hand to reach for a different target or move to another unoccupied space within the spell's range; either of these effects sets any restrained target loose. A restrained target must succeed at a Strength save to escape."
+  },
+  "Floating Disk": {
+    "level": "1",
+    "school": "Conjuration",
+    "time": "1 action or ritual",
+    "range": "30ft",
+    "components": "V, S, M",
+    "duration": "1hr",
+    "description": "Create a plane of force 3ft across and 1in think that floats 3ft above the ground. It can hold up to 500lbs. If you move 20ft away from the disk, it approaches you until it's within 20ft. It cannot cross an elevation change of 10ft or more. If it is ever more than 100ft away from you, the spell ends."
   }
 }
