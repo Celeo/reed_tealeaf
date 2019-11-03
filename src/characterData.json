@@ -59,27 +59,28 @@
       "I love a great mystery.",
       "The path to power is the path of knowledge.",
       "I owe a great debt that I need to pay back.",
-      "I speak without thinking about my words."
+      "I speak without thinking about my words.",
+      "I do not practice Evocation, Illusion, or Necromancy spells."
     ]
   },
   "languages": [
     "Common",
     "Halfling",
     "Dwarvish",
-    "TBD"
+    "Draconic"
   ],
   "lifeEvents": [
-    "Didn't know my parents personally, but was told of them",
-    "Born at a healer's home",
-    "2 older siblings, both older, one is an artisan and the other a trapper",
-    "Raised by grandparents - mother died in childbirth and father left afterward",
-    "Poor lifestlye and family life",
-    "Had fun &amp; spent most of the time at friends' homes",
-    "Impressed a wizard who brought me to the school of magic",
-    "Was selected from a group of potential students to be trained",
-    "Made a friend with an adventurer (PC tie in)",
-    "Met a powerful being (potential campaign tie in)",
-    "Was wrongly accused of the theft of a tome of knowledge and was sent to the service of the crown (campaign tie in)"
+    "Didn't know my parents personally, but was told of them.",
+    "Born at a healer's home.",
+    "2 older siblings, both older, one is an artisan and the other a trapper.",
+    "Raised by grandparents - mother died in childbirth and father left afterward.",
+    "Very poor.",
+    "Had fun & spent most of the time at friends' homes.",
+    "Impressed a wizard.",
+    "Was selected from a group of potential students to be trained.",
+    "Made a friend with an adventurer (PC tie in).",
+    "Met a powerful being (potential campaign tie in).",
+    "Was wrongly accused of the theft of a tome of knowledge and was sent to the service of the crown (campaign tie in)."
   ],
   "spells": [
     [

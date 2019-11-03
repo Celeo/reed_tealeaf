@@ -19,7 +19,7 @@
   },
   "Ray of Frost": {
     "level": "Cantrip",
-    "school": " Evocation",
+    "school": "Evocation",
     "time": "1 action",
     "range": "60ft",
     "components": "V, S",
