@@ -10,7 +10,7 @@ export const Equipment = (props) => {
         </span>
         <p><b>Gold</b>: { props.equipment.gold }</p>
         <ul className="normal-ul push-right">
-          { props.equipment.items.map(i => <p key={i}>{ i }</p>) }
+          { props.equipment.items.map(i => <li key={i}>{ i }</li>) }
         </ul>
       </div>
     </div>

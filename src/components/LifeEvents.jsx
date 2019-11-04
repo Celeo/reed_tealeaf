@@ -9,7 +9,7 @@ export const LifeEvents = (props) => {
           Life Events
         </span>
         <ul className="normal-ul push-right">
-          { props.lifeEvents.map(e => <p key={e}>{ e }</p>) }
+          { props.lifeEvents.map(e => <li key={e}>{ e }</li>) }
         </ul>
       </div>
     </div>
