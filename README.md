@@ -1,24 +1,11 @@
 # dnd_char_sheet
 
-## Project setup
-```
-yarn install
-```
+## Setup
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+1. Clone
+1. Install deps with `yarn`
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Running
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Run the dev mode with `yarn dev`
+* Run the production build with `yarn build`
