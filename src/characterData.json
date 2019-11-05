@@ -3,7 +3,9 @@
     "name": "Reed Tealeaf",
     "race": "Halfling",
     "class": "Wizard",
-    "level": 4,
+    "level": 4
+  },
+  "health": {
     "maxHealth": 32,
     "hitDie": "d6"
   },

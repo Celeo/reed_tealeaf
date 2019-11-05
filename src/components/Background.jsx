@@ -8,13 +8,20 @@ export const Background = (props) => {
         <span className="card-title orange-text">
           Background
         </span>
-        <p><b>{ props.background.choice }</b></p><br />
-        { props.background.quotes.map(q => <p key={q}>{ q }</p>) }
-        <br />
-        <p><b>Languages</b></p>
-        <ul className="normal-ul push-right">
-          { props.languages.map(l => <p key={l}>{ l }</p>) }
-        </ul>
+        <div className="row">
+          <div className="col s12 m6">
+            <p><b>{ props.background.choice }</b></p>
+            <ul className="normal-ul push-right">
+              { props.background.quotes.map(q => <li key={q}>{ q }</li>) }
+            </ul>
+          </div>
+          <div className="col s12 m6">
+            <p><b>Languages</b></p>
+            <ul className="normal-ul push-right">
+              { props.languages.map(l => <li key={l}>{ l }</li>) }
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )

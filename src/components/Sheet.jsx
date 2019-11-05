@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Overview } from './Overview.jsx'
+import { Health } from './Health.jsx'
 import { Background } from './Background.jsx'
 import { Attributes } from './Attributes.jsx'
 import { Skills } from './Skills.jsx'
@@ -14,10 +15,13 @@ export const Sheet = (props) => {
   return (
     <div>
       <div className="row">
-        <div className="col s12 m6">
+        <div className="col s6 m4">
           <Overview overview={props.characterData.overview} />
         </div>
-        <div className="col s12 m6">
+        <div className="col s6 m3">
+          <Health health={props.characterData.health} />
+        </div>
+        <div className="col s6 m5">
           <Background background={props.characterData.background} languages={props.characterData.languages} />
         </div>
       </div>

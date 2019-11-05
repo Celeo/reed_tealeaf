@@ -28,16 +28,8 @@ export const Overview = (props) => {
               <td>{ props.overview.level }</td>
             </tr>
             <tr>
-              <th>Prof. Bonus</th>
+              <th>Proficiency Bonus</th>
               <td>{ `+${proficiencyBonus(props.overview.level)}` }</td>
-            </tr>
-            <tr>
-              <th>Max Health</th>
-              <td>{ props.overview.maxHealth }</td>
-            </tr>
-            <tr>
-              <th>Hit Die</th>
-              <td>{ props.overview.hitDie }</td>
             </tr>
           </tbody>
         </table>
