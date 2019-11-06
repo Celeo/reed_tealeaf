@@ -95,8 +95,13 @@ export class Spells extends React.Component {
                       <div key={spellIndex} className="spellLink purple-text text-lighten-3 valign-wrapper">
                         <span onClick={() => this.triggerPopup(spell)}>{ spell }</span>
                         <label style={{ marginLeft: '10px' }}>
-                          <input type="checkbox" className="filled-in" checked={this.state.prepared.indexOf(spell) !== -1} onChange={() => this.togglePrepared(spell)} />
-                          <span>{ this.state.prepared.indexOf(spell) !== -1 ? 'prepared' : 'n.p.' }</span>
+                          <input
+                            type="checkbox"
+                            className="filled-in"
+                            checked={this.state.prepared.indexOf(spell) !== -1 || level === 0}
+                            onChange={() => this.togglePrepared(spell)} disabled={level === 0}
+                          />
+                          <span>{ this.state.prepared.indexOf(spell) !== -1 || level === 0 ? 'prepared' : 'n.p.' }</span>
                         </label>
                       </div>
                     ))
