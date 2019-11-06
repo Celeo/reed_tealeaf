@@ -117,5 +117,29 @@
     "maxPrepared": 7,
     "saveDC": 13,
     "attackBonus": 5
+  },
+  "familiar": {
+    "type": "Raven",
+    "ac": 12,
+    "hp": 1,
+    "speed": "10ft, fly 50ft",
+    "attributes": {
+      "Strength": 2,
+      "Dexterity": 14,
+      "Constitution": 8,
+      "Intelligence": 2,
+      "Wisdom": 12,
+      "Charisma": 6
+    },
+    "skills": [
+      "Perception +3 (passive 13)"
+    ],
+    "languages": [],
+    "actions": [
+      "Beak, melee attack at +4, reach 5ft, one target, for 1 piercing dmg"
+    ],
+    "abilities": [
+      "Can mimic sounds it's heard. A successful DC 10 Wisdom check is req. to tell the sound is a mimic."
+    ]
   }
 }

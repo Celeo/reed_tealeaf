@@ -54,7 +54,7 @@ export class Health extends React.Component {
                       </div>
                     </div>
                     <div className="col s6">
-                      <button className="btn btn-small blue-grey lighten-1" onClick={this.resetHealth.bind(this)}>R</button>
+                      <button className="btn btn-small blue-grey lighten-1 waves-effect waves-light" onClick={this.resetHealth.bind(this)}>R</button>
                     </div>
                   </div>
                 </td>

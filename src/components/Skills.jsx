@@ -22,7 +22,7 @@ export const Skills = (props) => {
           <div className="float-right">
             <label>
               <input type="checkbox" className="filled-in" checked={showAll} onChange={() => setShowAll(!showAll)} />
-              <span></span>
+              <span style={{ paddingLeft: '1.8rem' }}>Show All</span>
             </label>
           </div>
         </div>

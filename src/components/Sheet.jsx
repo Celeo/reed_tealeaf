@@ -10,6 +10,7 @@ import { Equipment } from './Equipment.jsx'
 import { Abilities } from './Abilities.jsx'
 import { Spells } from './Spells.jsx'
 import { LifeEvents } from './LifeEvents.jsx'
+import { Familiar } from './Familiar.jsx'
 
 export const Sheet = (props) => {
   return (
@@ -47,8 +48,11 @@ export const Sheet = (props) => {
         </div>
       </div>
       <div className="row">
-        <div className="col s12">
+        <div className="col s12 m6">
           <LifeEvents lifeEvents={props.characterData.lifeEvents} />
+        </div>
+        <div className="col s12 m6">
+          <Familiar familiar={props.characterData.familiar} />
         </div>
       </div>
     </div>

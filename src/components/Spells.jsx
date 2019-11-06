@@ -80,9 +80,10 @@ export class Spells extends React.Component {
           Spells
           </span>
           <p><b>Slots</b>: { this.props.casting.slots }</p>
+          {/* TODO need to be able to keep track of slots */}
           <p><b>Max Prepared</b>: { this.props.casting.maxPrepared }</p>
           <p><b>Save DC</b>: { this.props.casting.saveDC }</p>
-          <p><b>Attack bouns</b>: { attackBonus }</p>
+          <p><b>Attack Bonus</b>: { attackBonus }</p>
           <hr />
           <p><b>Known</b>: { this.props.casting.known }</p><br />
           <div className="row">
