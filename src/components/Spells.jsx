@@ -28,13 +28,18 @@ export class Spells extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      selectedSpell: null
+      selectedSpell: null,
+      prepared: []
     }
   }
 
   componentDidMount () {
     const ref = getModalRef()
     Modal.init(ref)
+    const alreadyPrepared = window.localStorage.getItem('preparedSpells')
+    if (alreadyPrepared) {
+      this.setState({ prepared: JSON.parse(alreadyPrepared) })
+    }
   }
 
   triggerPopup (spell) {
@@ -42,6 +47,17 @@ export class Spells extends React.Component {
     const ref = getModalRef()
     const modal = Modal.getInstance(ref)
     modal.open()
+  }
+
+  togglePrepared (spell) {
+    let { prepared } = this.state
+    if (prepared.indexOf(spell) !== -1) {
+      prepared = prepared.filter(s => s !== spell)
+    } else {
+      prepared.push(spell)
+    }
+    this.setState({ prepared })
+    window.localStorage.setItem('preparedSpells', JSON.stringify(prepared))
   }
 
   render () {
@@ -73,18 +89,18 @@ export class Spells extends React.Component {
             {
               this.props.spells.map((spellsInLevel, level) => (
                 <div className="col s4 m2" key={level}>
-                  <p><b>{ printSpellLevel(level) }</b></p>
-                  <ul className="normal-ul push-right">
-                    {
-                      spellsInLevel.map((spell, spellIndex) => (
-                        <li
-                          key={spellIndex}
-                          className="spellLink purple-text text-lighten-3"
-                          onClick={() => this.triggerPopup(spell)}
-                        >{ spell }</li>
-                      ))
-                    }
-                  </ul>
+                  <p><b>{ printSpellLevel(level) }</b></p><br />
+                  {
+                    spellsInLevel.map((spell, spellIndex) => (
+                      <div key={spellIndex} className="spellLink purple-text text-lighten-3 valign-wrapper">
+                        <span onClick={() => this.triggerPopup(spell)}>{ spell }</span>
+                        <label style={{ marginLeft: '10px' }}>
+                          <input type="checkbox" className="filled-in" checked={this.state.prepared.indexOf(spell) !== -1} onChange={() => this.togglePrepared(spell)} />
+                          <span>{ this.state.prepared.indexOf(spell) !== -1 ? 'prepared' : 'n.p.' }</span>
+                        </label>
+                      </div>
+                    ))
+                  }
                 </div>
               ))
             }
