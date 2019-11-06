@@ -6,7 +6,7 @@
     "level": 4
   },
   "health": {
-    "maxHealth": 32,
+    "maxHealth": 26,
     "hitDie": "d6"
   },
   "attributes": {
