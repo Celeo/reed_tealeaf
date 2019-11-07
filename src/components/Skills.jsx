@@ -11,7 +11,7 @@ export const Skills = (props) => {
   const [showAll, setShowAll] = useState(false)
   const skillsToShow = showAll ? allSkills.map(s => s.name) : props.skills
   return (
-    <div className="card blue-grey darken-1">
+    <div className="card blue-grey darken-1 z-depth-3">
       <div className="card-content white-text">
         <div className="clearfix">
           <div className="float-left">

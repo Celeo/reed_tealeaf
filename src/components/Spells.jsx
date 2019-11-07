@@ -73,7 +73,7 @@ export class Spells extends React.Component {
       description: 'unknown'
     }
     return (
-      <div className="card blue-grey darken-1">
+      <div className="card blue-grey darken-1 z-depth-3">
         <div className="card-content white-text">
           <span className="card-title orange-text">
             <i className="material-icons small">bubble_chart</i>
