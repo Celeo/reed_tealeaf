@@ -24,6 +24,24 @@ const printSpellLevel = (level) => {
 
 const getModalRef = () => document.querySelector('#spellModal')
 
+const slotsForLevel = (level, count) => {
+  const boxes = []
+  for (let index = 0; index < count; index++) {
+    boxes.push(
+      <label key={index}>
+        <input type="checkbox" className="filled-in" key={index} />
+        <span></span>
+      </label>
+    )
+  }
+  return (
+    <div key={level} style={{ paddingTop: '0.5rem' }} className="valign-wrapper">
+      <span style={{ paddingRight: '1rem', paddingBottom: '0.5rem' }}>{ printSpellLevel(level + 1) }:</span>
+      { boxes }
+    </div>
+  )
+}
+
 export class Spells extends React.Component {
   constructor (props) {
     super(props)
@@ -79,13 +97,16 @@ export class Spells extends React.Component {
             <i className="material-icons small">bubble_chart</i>
           Spells
           </span>
-          <p><b>Slots</b>: { this.props.casting.slots }</p>
-          {/* TODO need to be able to keep track of slots */}
           <p><b>Max Prepared</b>: { this.props.casting.maxPrepared }</p>
           <p><b>Save DC</b>: { this.props.casting.saveDC }</p>
           <p><b>Attack Bonus</b>: { attackBonus }</p>
+          <p><b>Known</b>: { this.props.casting.known }</p>
           <hr />
-          <p><b>Known</b>: { this.props.casting.known }</p><br />
+          <p><b>Slots</b></p>
+          {
+            this.props.casting.slots.map((s, i) => slotsForLevel(i, s))
+          }
+          <hr />
           <div className="row">
             {
               this.props.spells.map((spellsInLevel, level) => (

@@ -113,7 +113,10 @@
   ],
   "casting": {
     "known": "Cantrips = 4, 1st = 8, 2nd = 4",
-    "slots": "1st = 4, 2nd = 3",
+    "slots": [
+      4,
+      3
+    ],
     "maxPrepared": 7,
     "saveDC": 13,
     "attackBonus": 5
