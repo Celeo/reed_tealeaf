@@ -95,17 +95,22 @@ export class Spells extends React.Component {
         <div className="card-content white-text">
           <span className="card-title orange-text">
             <i className="material-icons small">bubble_chart</i>
-          Spells
+            Spells
           </span>
-          <p><b>Max Prepared</b>: { this.props.casting.maxPrepared }</p>
-          <p><b>Save DC</b>: { this.props.casting.saveDC }</p>
-          <p><b>Attack Bonus</b>: { attackBonus }</p>
-          <p><b>Known</b>: { this.props.casting.known }</p>
-          <hr />
-          <p><b>Slots</b></p>
-          {
-            this.props.casting.slots.map((s, i) => slotsForLevel(i, s))
-          }
+          <div className="row">
+            <div className="col s6 m3">
+              <p><b>Max Prepared</b>: { this.props.casting.maxPrepared }</p>
+              <p><b>Save DC</b>: { this.props.casting.saveDC }</p>
+              <p><b>Attack Bonus</b>: { attackBonus }</p>
+              <p><b>Known</b>: { this.props.casting.known }</p>
+            </div>
+            <div className="col s6 m9">
+              <p><b>Slots</b></p>
+              {
+                this.props.casting.slots.map((s, i) => slotsForLevel(i, s))
+              }
+            </div>
+          </div>
           <hr />
           <div className="row">
             {
