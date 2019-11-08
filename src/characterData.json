@@ -28,16 +28,24 @@
     "Investigation"
   ],
   "equipment": {
-    "gold": 120,
+    "gold": 119,
     "items": [
       "Quarterstaff",
-      "Arcane focus",
-      "Explorer's pack: backpack, bedroll, mess kit, tinderbox, torch (10), rations (10), waterskin, hempen rope",
+      "Arcane focus - wand",
+      "Backpack",
+      "Bedroll",
+      "Mess kit",
+      "Tinderbox",
+      "Torch (10)",
+      "Rations (10)",
+      "Waterskin",
+      "Hempen rope",
       "Spellbook",
       "Ink & quill",
       "Knife",
       "Letter",
-      "Common clothes"
+      "Common clothes",
+      "Robes"
     ]
   },
   "abilities": {
