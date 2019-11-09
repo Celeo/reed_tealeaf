@@ -46,11 +46,11 @@ export class Health extends React.Component {
               </tr>
               <tr>
                 <th>Current Health</th>
-                <td>
+                <td style={{ paddingBottom: 0 }}>
                   <div className="row valign-wrapper">
                     <div className="col s6">
-                      <div className="input-field">
-                        <input type="number" className="red-text center-align" value={this.state.currentHealth} onChange={this.setHealth.bind(this)} />
+                      <div className="input-field" style={{ marginTop: 0, marginBottom: 0 }}>
+                        <input type="number" className="white-text center-align" value={this.state.currentHealth} onChange={this.setHealth.bind(this)} />
                       </div>
                     </div>
                     <div className="col s6">

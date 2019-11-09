@@ -59,11 +59,11 @@
       "Spellcasting",
       "Arcane Recovery - 1/day after short rest, regain level/2 of spent spell slots",
       "Arcane Tradition - School of Conjuration",
-      "Conjuration Savant - Gold &amp; time to copy Conjuration spells is halved",
-      "Minor Conjuration - Can create small inanimate objects"
+      "Conjuration Savant - Gold & time to copy Conjuration spells is halved",
+      "Minor Conjuration - Create small inanimate object within 10ft that are <= 3ft on a side & <= 10lbs, nonmagical form, that I've seen. Visibly magical & spreads dim light to 5ft. Lasts for 1hr or until damaged."
     ],
     "feats": [
-      "Keen Mind - always know which ways is north, always known how many hours until sunset/sunrise, and can accurately recall anything you've seen/heard within the last month"
+      "Keen Mind - always know which ways is north, always know how many hours until sunset/sunrise, and can accurately recall anything I've seen/heard within the last month"
     ]
   },
   "background": {

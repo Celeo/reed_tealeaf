@@ -123,7 +123,7 @@
     "range": "60ft",
     "components": "V, S, M",
     "duration": "Concentration to 1hr",
-    "description": "Fill a 20ft cube with webs, making the area difficult terrain and lightly obscured. The webs must be connected to something on at least 2 sides, though they can be layed on the floor/wall/ceiling. Any creature that moves into or starts its turn in the webs must make a Dexterity save or be restrained, which requires a Strength check against the spell DC to break free. The web is flammable, being destroyed 5ft/round when exposed to fire, dealing 2d4 fire damage to any creature that starts its turn in the fire."
+    "description": "Fill a 20ft cube with webs, making the area difficult terrain and lightly obscured. The webs must be connected to something on at least 2 sides, though they can be layed on the floor/wall/ceiling to a depth of 5ft. Any creature that moves into or starts its turn in the webs must make a Dexterity save or be restrained, which requires a Strength check against the spell DC to break free. The web is flammable, being destroyed 5ft/round when exposed to fire, dealing 2d4 fire damage to any creature that starts its turn in the fire."
   },
   "Scorching Ray": {
     "level": "2",
